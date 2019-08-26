@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Latihan Django">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="keywords" content="CSS,JavaScripts,HTML">
+        <title>
+            Belajar Django
+        </title>
+        {% include styles %}
+    </head>
+    <body>
+        {% include navbar %}
+        {% include jumbroton %}
+        <div class="container-fluid">
+            <div class="container bg-white text-dark shadow">
+                <div class="row">
+                    {% block main %}
+
+                    {% endblock main %}
+                </div>
+            </div>
+        </div>
+        {% include javascripts %}
+    </body>
+</html>

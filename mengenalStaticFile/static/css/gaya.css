@@ -1,0 +1,77 @@
+body{
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+.nav{
+    border-top: 1px solid #b8cce5;
+    border-bottom: 1px solid #ed8079;
+    margin: 0;
+    background-color: #ffffff;
+    height: 40px;
+    display: block;
+    position: fixed;
+    top:0;
+    right: 0;
+    buttom:0;
+    left:0;
+    z-index: 9999;
+
+}
+.nav ul{
+    display: block;
+}
+.nav ul li{
+    text-decoration: none;
+    list-style:none;
+    float: left;
+}
+.nav ul li a{
+    font-family: inherit;
+    font-weight: 400;
+    text-decoration:none;
+    padding: 12px 14px;
+    margin: 2px;
+    color: #2b3d52;
+}
+.nav ul li a:hover{
+    color: #6a8df9;
+}
+.banner{
+    background-image: url('../img/mountains-4420690.jpg');
+    background-size: cover;
+    background-position: 0px;
+    border-bottom: 2px solid #6a8df9;
+    height: 280px;
+}
+.container{
+    position: relative;
+    width: 900px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    border-top: 1px solid #1b2653;
+    color: #6a8df9;
+}
+.main{
+    width: 620px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.aside{
+    float: right;
+    width: 280px;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: #1b2653;
+    clear: both;
+    padding: 2px;
+    margin: 0;
+    text-align: right;
+    color: white;
+}
+.footer:hover{
+    color: #6a8df9;
+}

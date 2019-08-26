@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="belajar django 2.2">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="keywords" content="JavaScripts,CSS,HTML">
+        <title>
+            Belajar Django
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <article>
+                <section>
+                    <h3>Welcome in {{ judul }}</h3>
+                    <small>Post by {{ author }} in {{ date }}</small>
+                    <p>this section is about {{ judul }}. in this section about {{ deskripsi }}</p>
+                    <ul>
+                        {% for link,name in nav %}
+                            <li><a href="{{ link }}">{{ name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </body>
+</html>

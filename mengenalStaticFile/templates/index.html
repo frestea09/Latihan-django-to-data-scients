@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Latihan Django">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="keywords" content="JavaScripts, HTML,CSS">
+        <link rel="stylesheet" href="{% static css %}">
+        <title>
+            Belajar Django
+        </title>
+
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                {% for link,name in nav %}
+                    <li><a href="{{ link }}">{{name }}</a> </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="container">
+            <div class="banner">
+            </div>
+            <div class="aside">
+                <h3>Asides</h3>
+                <p>{{ aside }}</p>
+            </div>
+            <div class="main">
+                <article>
+                    <section>
+                        <h3>{{ judul }}</h3>
+                        <p>{{ article }}</p>
+                    </section>
+                </article>
+            </div>
+        <div class="footer">
+            <footer>
+                &copy;2019 ilman teguh prasetya
+            </footer>
+        </div>
+        </div>
+    </body>
+</html>
