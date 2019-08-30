@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'snippets/information.html' %}
+        <title>
+            Django Tutorial || {{ namePage }}
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body>
+        {% include 'snippets/navbar.html' %}
+        {% include 'snippets/jumbotron.html' %}
+        <div class="container-fluid">
+            <div class="main">
+                {% block main %}
+                    <h3>Base Template</h3>
+                {% endblock main %}
+            </div>
+        </div>
+        {% include 'snippets/javascripts.html' %}
+    </body>
+</html>
