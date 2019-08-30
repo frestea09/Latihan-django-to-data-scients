@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" charset="Latihan Django">
+        <meta name="author" charset="ilman teguh prasetya">
+        <meta name="keywords" charset="HTML,CSS,JavaScripts">
+        <title>
+            Belajar Django
+        </title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <h3>Hello World</h3>
+                <table>
+                    {% for path in post %}
+                        <article>
+                            <section>
+                                <h3>{{ path.judul }}</h3>
+                                <p>{{ path.context }}</p>
+                            </section>
+                        </article>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
