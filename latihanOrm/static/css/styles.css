@@ -1,0 +1,33 @@
+body{
+    font-family: Roboto;
+}
+#author{
+    text-align: left;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: right;
+}
+aside ul{
+    list-style-type: none;
+    background-color: #343a40;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+aside ul li{
+    float: left;
+}
+aside ul li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+aside ul li a:hover{
+    background-color: #e9ecef ;
+    color: #343a40;
+}
+#author{
+    clear: both;
+}

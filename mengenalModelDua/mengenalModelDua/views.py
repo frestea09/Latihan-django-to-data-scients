@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 def index(request):
     content = {
+        'namePage':'Home',
         'title':'Selamat Data',
         'posts':[
             ['title','hello world'],

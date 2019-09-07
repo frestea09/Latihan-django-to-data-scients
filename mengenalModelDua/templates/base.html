@@ -3,19 +3,24 @@
 <html lang="en">
     <head>
         {% include 'snippets/information.html' %}
-        <title>
-            Django Tutorial || {{ namePage }}
-        </title>
+        {% block title %}
+            <title>
+                Base
+            </title>
+        {% endblock title %}
         {% include 'snippets/styles.html' %}
     </head>
     <body>
         {% include 'snippets/navbar.html' %}
         {% include 'snippets/jumbotron.html' %}
         <div class="container-fluid">
-            <div class="main">
+            <div class="content">
                 {% block main %}
-                    <h3>Base Template</h3>
+                    <div class="main">
+                        <h3>Base Template</h3>
+                    </div>
                 {% endblock main %}
+                {% include 'snippets/footer.html' %}
             </div>
         </div>
         {% include 'snippets/javascripts.html' %}

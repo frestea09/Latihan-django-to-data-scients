@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'snippets/meta.html' %}
+        <title>
+            Belajar Django
+        </title>
+        {% include 'snippets/styles.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include 'snippets/navbar.html' %}
+
+            {% include 'snippets/jumbotron.html' %}
+            <div class="aside">
+
+            </div>
+            <div class="main">
+                <article>
+                    <section>
+                        {% block post %}
+                            <h3>Welcome</h3>
+                            <small>Post by {{ author }} on {{ date }}</small>
+                            <p>{{ content }}</p>
+                        {% endblock post %}
+                    </section>
+                </article>
+            </div>
+        </div>
+        <div class="card-footer" id="author">
+            <footer>&copy;2019 ilman teguh prasetya</footer>
+        </div>
+        {% include 'snippets/scripts.html' %}
+    </body>
+</html>

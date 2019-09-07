@@ -1,8 +1,25 @@
 {% extends 'base.html' %}
+{% block title %}
+            <title>
+                Django Tutorial || {{ namePage }}
+            </title>
+        {% endblock title %}
 {% block main %}
-    <ul>
-        {% for link,text in nav %}
-            <li><a href="{{ link }}">{{ text }}</a> </li>
-        {% endfor %}
-    </ul>
+    <div class="aside">
+        <aside>
+            <ul id="idAside">
+                {% for link,text in nav %}
+                    <li><a href="{{ link }}">{{ text }}</a> </li>
+                {% endfor %}
+            </ul>
+        </aside>
+    </div>
+    <div class="main">
+        <article>
+            <section>
+                <h3>Hello</h3>
+                <p>Selamat Datang</p>
+            </section>
+        </article>
+    </div>
 {% endblock main %}

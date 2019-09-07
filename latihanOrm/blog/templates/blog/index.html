@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block post %}
+    <aside>
+        <ul>
+            {% for link,name in nav  %}
+                <li><a href="{{ link }}">{{ name }}</a> </li>
+            {% endfor %}
+        </ul>
+    </aside>
+    {% for post in posts %}
+        <article>
+            <section>
+                <h3>{{ post.title }}</h3>
+                <small>{{ post.author }}</small>
+                <p>{{ post.content }}</p>
+            </section>
+        </article>
+    {% endfor %}
+{% endblock post %}
