@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(200px,auto);
+    grid-template-areas:
+        "bagianNav bagianNav bagianNav bagianNav"
+        "bagianJambroton bagianJambroton bagianJambroton bagianJambroton"
+        "bagianContainer bagianContainer bagianContainer bagianContainer"
+        "bagianContainer bagianContainer bagianContainer bagianContainer"
+        "bagianContainer bagianContainer bagianContainer bagianContainer"
+        "bagianContainer bagianContainer bagianContainer bagianContainer"
+    ;
+}
+.bagianNav{
+    grid-area: bagianNav;
+}
+.bagianJambroton{
+    grid-area: bagianJambroton;
+}
+.bagianContainer{
+    grid-area: bagianContainer;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(100px,auto);
+    grid-template-areas:
+        "bagianAside bagianMain bagianMain bagianMain"
+        "bagianAside bagianMain bagianMain bagianMain"
+        "bagianAside bagianMain bagianMain bagianMain"
+        "bagianFooter bagianFooter bagianFooter bagianFooter"
+    ;
+}
+.bagianAside{
+    grid-area: bagianAside;
+}
+.bagianMain{
+    grid-area: bagianMain;
+}
+.bagianFooter{
+    grid-area: bagianFooter;
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block aside %}
+    <div class="bagianAside">
+        <ol>
+            {% for link,nav in nav  %}
+                 <li><a href="{{ link }}">{{ nav }}</a></li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endblock aside %}
+{% block bagianMain %}
+    <div class="bagianMain">
+        <article>
+            <section>
+                <h3>{{ judul }}</h3>
+                <small>Post by {{ author }} on {{ today }}</small>
+                <p>{{ content }}</p>
+            </section>
+        </article>
+    </div>
+{% endblock bagianMain %}
